@@ -1,0 +1,196 @@
+.menu {
+background-color: rgb( 22 , 61, 94 );
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px 50px;
+overflow: auto;
+}
+body{
+margin: 0;
+}
+.menu ul{
+text-align: center;
+padding-top: 10px;
+padding-bottom: 10px;
+text-decoration: none;
+}
+.menu li {
+display: inline-block;
+text-align: center;
+}
+.menu li a{
+display: inline-block;
+height: auto;
+width:200px;
+background-color: rgb( 22 , 61, 94 );
+margin: 1px;
+font-size: 20px;
+text-align: center;
+color: rgb(255, 255, 255);
+text-decoration: none;
+border-radius: 250px 250px;
+height: 30px;
+}
+.menu li a:hover{
+background-color: rgba(255, 255, 255, 0.258);
+}
+.main1 {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 100px 130px;
+overflow: auto;
+text-align:right;
+color: #dddddd;
+position: relative;
+}
+
+.main1::after{
+content: "";
+position: absolute;
+z-index: -1;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+background-image:linear-gradient(90deg,rgba(51,78,104,0.2) 0%, rgba(20, 63, 92, 0.655)60%), url(../images/تنزيل\ \(22\).jpg);
+}
+
+
+.photoo img{
+    width: 230px;
+
+}
+
+.photo1 img{
+    border-radius: 30px;
+    display: flex;
+}
+
+.photot img{
+overflow: auto;
+margin: 30px;
+border-style: groove;
+}
+.photo{
+text-align: center;
+display: flex;
+background-color: brown;
+padding-top: 20px;
+padding-bottom: 20px;
+padding-left: 15px;
+padding-right: 15px;
+overflow: auto;
+gap: 12PX;
+}
+.photot{
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+}
+.card-info{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 5px 25px;
+
+}
+.card-info img {
+    
+    width: 40px;
+}
+
+.content-table{
+border-collapse:collapse;
+margin: 25px 0;
+font-size: 19px;
+min-width: 500px;
+border-radius: 5px 5px 0 0;
+overflow: hidden;
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+} 
+
+.content-table thead tr{
+background-color: rgb( 22 , 61, 94 );
+color: rgb(255, 255, 255);
+text-align: center;
+font-weight: bold;
+
+}
+.content-table th,.content-table td{
+padding: 13px 65px;
+text-align: center;
+}
+
+
+.content-table tbody tr {
+border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type{
+border-bottom: 2px solid rgb( 22 , 61, 94 );
+}
+
+table {
+    width: 30%;
+    table-layout: fixed;
+}
+
+
+@media screen and (min-width:575px){
+    .photo,.photoo{
+        grid-template-columns: 200px 1fr;
+    }
+
+    .coon{
+        max-width: 540px;
+    }
+}
+
+@media screen and (min-width:768px){
+    .photo,.photoo{
+        grid-template-columns: 350px 1fr;
+    }
+
+    .coon{
+        max-width: 720px;
+    }
+}
+
+@media screen and (min-width:992px){
+    .photo,.photoo{
+        grid-template-columns: 400px 1fr;
+    }
+
+    .coon {
+        max-width: 960px;
+    }
+}
+
+@media screen and (min-width:1200px){
+    .photo,.photoo{
+        grid-template-columns: 350px 1fr;
+    }
+
+    .coon {
+        max-width: 1340px;
+    }
+}
+
+
+
+
+.footer{
+    background-color: rgb(87, 109, 124);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 15px;
+    width: 98.79%;
+    overflow: hidden;
+    padding: 9px;
+}
